@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+
+{% block title %}{% endblock %}
+
+
+{% block content %}
+
+  <div class="container">
+
+    <h1>Books</h1>
+
+<!-- PUT INPUT FORM HERE -->
+    <form method="POST" action="/" role="form">
+      <div class="form-group">
+        <label>Title</label>
+        <input type="text" class="form-control" id="title" name="title">
+      </div>
+      <div class="form-group">
+        <label for="text">Author</label>
+        <input type="text" class="form-control" id="author" name="author">
+      </div>
+      <div class="form-group">
+        <label for="text">Total Pages</label>
+        <input type="text" class="form-control" id="pages" name="pages">
+      </div>
+      <div class="form-group">
+        <label for="text">Genre</label>
+        <input type="text" class="form-control" id="genre" name="genre">
+      </div>
+      <button type="submit" class="submitBtn btn btn-default">Submit</button>
+    </form>
+
+<!-- DISPLAY ALL Books HERE -->
+  <div>
+    <p id="displayAll"></p>
+  </div>
+
+
+  </div>
+
+{% endblock %}
